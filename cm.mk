@@ -24,3 +24,6 @@ PRODUCT_RELEASE_NAME := fireball
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
+
+# Release
+CM_RELEASE := true
