@@ -32,6 +32,10 @@
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
 
+    <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
+         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <bool name="config_automatic_brightness_available">true</bool>
+
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 zones as follows:
 
@@ -59,15 +63,15 @@
          than the size of the config_autoBrightnessLevels array.
     -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>45</item>
-        <item>50</item>
-        <item>55</item>
-        <item>75</item>
-        <item>105</item>
-        <item>125</item>
-        <item>150</item>
-        <item>180</item>
-        <item>200</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>126</item>
+        <item>142</item>
+        <item>169</item>
+        <item>197</item>
+        <item>226</item>
         <item>255</item>
     </integer-array>
 
@@ -80,7 +84,7 @@
         <item>255</item>
         <item>255</item>
         <item>255</item>
-        <item>0</item>
+        <item>-1</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
@@ -97,7 +101,7 @@
         <item>255</item>
         <item>255</item>
         <item>255</item>
-        <item>0</item>
+        <item>-1</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
@@ -106,5 +110,5 @@
     </integer-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDim">11</integer>
 </resources>
